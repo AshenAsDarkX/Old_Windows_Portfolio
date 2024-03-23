@@ -21,7 +21,7 @@ export default function IconButton(props: IconButtonProps) {
       >
         <div className="bg-windows-neutral flex items-center border-2 border-b-gray-500 border-l-white border-r-gray-500 border-t-white p-1">
           {!props.isIcon && props.image ? (
-            <Image width={15} src={props.image} alt={props.text} />
+            <Image width={15} src={props.image} alt="" />
           ) : props.isIcon && props.iconComponent ? (
             <props.iconComponent />
           ) : (
