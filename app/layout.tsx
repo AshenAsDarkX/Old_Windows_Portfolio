@@ -3,7 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import SocialHeader from "./sections/SocialHeader";
 import Footer from "./sections/Footer";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,9 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-windows-neutral w-full ">
+      <body className="w-full bg-windows-neutral ">
         <SocialHeader />
         {children}
+        <Analytics />
+        <SpeedInsights />
         <Footer />
       </body>
     </html>

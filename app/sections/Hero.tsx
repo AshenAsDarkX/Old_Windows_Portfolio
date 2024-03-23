@@ -64,7 +64,7 @@ export default function Hero() {
         <PopupWarning
           text="Resume"
           buttonStyles="mt-7 mb-14"
-          link="https://drive.google.com/file/d/1yUQkkJiCTHsYWWNu_4qup-oteuyRWOQy/view?usp=drive_link"
+          link="https://drive.google.com/file/d/1cScZ8J-Lh7-AKTRRD6qfqvL-XGbaDDEP/view?usp=sharing"
         />
       </div>
       <p className="keepscroll-animation bottom-8 hidden lg:absolute lg:block">
