@@ -6,7 +6,7 @@ import EmailIcon from "@/public/email-icon.svg";
 
 export default function SocialHeader() {
   return (
-    <div className="flex w-full top-0 left-0 max-w-7xl pt-5 items-center justify-between">
+    <div className="hidden lg:flex w-full top-0 left-0 max-w-7xl pt-5 items-center justify-between px-10">
         <p className="font-bold text-4xl">himeshana.dev</p>
         <div className="flex gap-4">
 
