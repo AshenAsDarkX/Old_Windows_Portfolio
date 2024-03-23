@@ -3,10 +3,46 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Berkelium64;
-    src: url(../fonts/W95FA.otf) format("truetype");
+  font-family: Berkelium64;
+  src: url(../fonts/W95FA.otf) format("truetype");
 }
 
-*{
-    font-family: Berkelium64;
+* {
+  font-family: Berkelium64;
+  /* border: 1px red solid; */
+}
+
+.oldButtonHover:hover > div > p {
+  @apply border-2 px-3 leading-none border-dotted border-black
+}
+
+.oldButtonHover > div > p {
+  @apply border-2 border-windows-neutral px-3 leading-none hover:border-dotted
+}
+
+.closeButtonHover:hover > div > p {
+  @apply border-2 leading-none border-dotted border-black text-black
+}
+
+.closeButtonHover > div > p {
+  @apply border-2 border-windows-neutral leading-none hover:border-dotted text-gray-500
+}
+
+.keepscroll-animation{
+  animation-name: blink;
+  animation-duration: 1.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+    
+  }
+  50% {
+    opacity: 1;
+
+  }
 }
