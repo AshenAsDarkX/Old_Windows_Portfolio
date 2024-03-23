@@ -28,7 +28,7 @@ export default function Hero() {
           alt="me"
           src={me}
           width={300}
-          className="scale-90 md:scale-125 lg:scale-100 md:pt-5 lg:pt-0"
+          className="scale-90 md:scale-125 md:pt-5 lg:scale-100 lg:pt-0"
         />
       </div>
       <div className="flex basis-1/2 flex-col items-center gap-4 md:gap-6 lg:items-start lg:gap-0">
@@ -61,7 +61,11 @@ export default function Hero() {
             link="mailto:ashenhimeshana@gmail.com"
           />
         </div>
-        <PopupWarning text="Resume" buttonStyles="mt-7 mb-14" />
+        <PopupWarning
+          text="Resume"
+          buttonStyles="mt-7 mb-14"
+          link="https://drive.google.com/file/d/1yUQkkJiCTHsYWWNu_4qup-oteuyRWOQy/view?usp=drive_link"
+        />
       </div>
       <p className="keepscroll-animation bottom-8 hidden lg:absolute lg:block">
         Keep scrolling
