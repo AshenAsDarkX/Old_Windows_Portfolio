@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Pixilla from "@/public/pixilla.png";
 import PopupWarning from "./PopupWarning";
+import clsx from "clsx";
+import technologies from "@/data/technologies";
 
 type ProjCardProps = {
   title: string;
@@ -9,6 +11,7 @@ type ProjCardProps = {
   desc?: string;
   text: string;
   link?: string;
+  projectTechnologies?: string[];
 };
 
 export default function ProjectCard(props: ProjCardProps) {
@@ -28,6 +31,12 @@ export default function ProjectCard(props: ProjCardProps) {
           />
           <div className="flex flex-col items-end p-3">
             <p className="pb-2">{props.desc}</p>
+            <p className="self-start pb-2 font-bold">
+              Technologies:{" "}
+              <span className="font-light">
+                {props.projectTechnologies?.join(", ")}
+              </span>
+            </p>
             <PopupWarning text={props.text} link={props.link} />
           </div>
         </div>
@@ -35,3 +44,7 @@ export default function ProjectCard(props: ProjCardProps) {
     </div>
   );
 }
+
+type TechIconsProps = {
+  image?: any;
+};

@@ -16,6 +16,7 @@ export default function Projects() {
               desc={project.description}
               text={project.buttonText}
               link={project.link}
+              projectTechnologies={project.technologies}
             />
           );
         })}
