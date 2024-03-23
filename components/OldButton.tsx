@@ -1,17 +1,30 @@
+import clsx from "clsx";
+import Image from "next/image";
 import React from "react";
 
 type ButtonPropType = {
   text: string;
+  className?: string;
+  image?: any;
+  link?: string;
 };
 
 export default function OldButton(props: ButtonPropType) {
   return (
-    <div className="items-center justify-center border-2 border-solid border-black">
-      <div className="border-2 border-b-gray-500 border-l-white border-r-gray-500 border-t-white bg-gray-300 px-3 py-1">
-        <p className="border-2 border-gray-300 px-3 leading-none hover:border-dotted hover:border-black">
-          {props.text}
-        </p>
+    <a href={props.link} target="_blank">
+      <div
+        className={clsx(
+          "oldButtonHover cursor-pointer items-center justify-center border-2 border-solid border-black",
+          props.className,
+        )}
+      >
+        <div className="bg-windows-neutral flex items-center border-2 border-b-gray-500 border-l-white border-r-gray-500 border-t-white px-3 py-1">
+          {props.image && (
+            <Image width={15} src={props.image} alt={props.text} />
+          )}
+          <p className="">{props.text}</p>
+        </div>
       </div>
-    </div>
+    </a>
   );
 }
