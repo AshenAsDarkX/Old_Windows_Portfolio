@@ -19,7 +19,12 @@ const technologies: Technologies[] = [
   },
   { id: 9, type: "web", name: "TypeScript", image: "technologies/ts-logo.svg" },
   { id: 10, type: "web", name: "PHP", image: "technologies/php-logo.svg" },
-  { id: 12, type: "web", name: "Vanilla", image: "technologies/js-logo.svg" },
+  {
+    id: 12,
+    type: "web",
+    name: "JavaScript",
+    image: "technologies/js-logo.svg",
+  },
 
   {
     id: 17,
@@ -48,25 +53,25 @@ const technologies: Technologies[] = [
   {
     id: 19,
     type: "design",
-    name: "Java",
+    name: "After Effects",
     image: "technologies/ae-logo.svg",
   },
   {
     id: 14,
     type: "design",
-    name: "Adobe Il",
+    name: "Illustrator",
     image: "technologies/ai-logo.svg",
   },
   {
     id: 15,
     type: "design",
-    name: "Adobe Ps",
+    name: "Photoshop",
     image: "technologies/ps-logo.svg",
   },
   {
     id: 16,
     type: "design",
-    name: "Adobe Pr",
+    name: "Premiere Pro",
     image: "technologies/pr-logo.svg",
   },
 ];
