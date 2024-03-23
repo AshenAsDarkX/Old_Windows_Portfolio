@@ -43,7 +43,7 @@ export default function PopupWarning(props: PopupWarningProps) {
           <div className="flex items-center">
             <Image width={100} alt="warning" src={warningImage} />
             <p>
-              You'll be redirected to another page. Do you wish to continue?
+              You&#39;ll be redirected to another page. Do you wish to continue?
             </p>
           </div>
           <div className="flex justify-end pb-3 pr-3">

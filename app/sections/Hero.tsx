@@ -35,7 +35,7 @@ export default function Hero() {
         <h1 className="text-center text-5xl font-bold md:text-8xl lg:text-left">
           <span className="text-3xl md:text-5xl">Hey!!</span>
           <br />
-          I'm Ashen
+          I&#39;m Ashen
           <br />
           Himeshana
         </h1>
