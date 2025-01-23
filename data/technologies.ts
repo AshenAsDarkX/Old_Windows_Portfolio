@@ -24,6 +24,11 @@ const technologies: Technologies[] = [
     type: "web",
     name: "JavaScript",
     image: "technologies/js-logo.svg",
+  },{
+    id: 17,
+    type: "web",
+    name: "Wordpress",
+    image: "technologies/wp-logo.svg",
   },
 
   {
@@ -74,12 +79,7 @@ const technologies: Technologies[] = [
     name: "Premiere Pro",
     image: "technologies/pr-logo.svg",
   },
-  {
-    id: 17,
-    type: "web",
-    name: "Wordpress",
-    image: "technologies/wp-logo.svg",
-  },
+  
 ];
 
 export default technologies;
