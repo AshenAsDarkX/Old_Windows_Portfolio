@@ -73,6 +73,12 @@ const technologies: Technologies[] = [
     type: "design",
     name: "Premiere Pro",
     image: "technologies/pr-logo.svg",
+  },,
+  {
+    id: 17,
+    type: "web",
+    name: "Wordpress",
+    image: "technologies/wp-logo.svg",
   },
 ];
 
