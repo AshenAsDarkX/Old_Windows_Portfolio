@@ -20,13 +20,13 @@ export default function ProjectForm() {
 
         try {
           const result = await uploadProject(formData);
-          setMessage("✅ Success! Project added.");
+          setMessage("Success! Project added.");
           formRef.current?.reset();
 
           // Refresh the page or redirect to home to see the result
           router.refresh();
         } catch (error) {
-          setMessage("❌ Error: Upload failed.");
+          setMessage("Error: Upload failed.");
           console.error(error);
         } finally {
           setLoading(false);
