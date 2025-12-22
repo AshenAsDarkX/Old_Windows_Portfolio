@@ -1,4 +1,7 @@
 import { useFormStatus } from "react-dom";
+import Image from "next/image";
+import loading from "@/public/loading-icon.jpg";
+import IconButton from "@/components/IconButton";
 
 export function SubmitButton() {
   const { pending } = useFormStatus();
@@ -7,19 +10,18 @@ export function SubmitButton() {
     <button
       type="submit"
       disabled={pending}
-      className={`flex items-center justify-center rounded border-2 p-3 font-bold text-white transition-all 
-        ${
-          pending
-            ? "cursor-not-allowed bg-gray-400 opacity-70"
-            : "bg-blue-600 hover:bg-blue-700 active:translate-y-[1px]"
-        }`}
+      className={` cursor-pointer items-center justify-center p-2
+        ${pending ? "border-transparent" : "oldButtonHover border-2 border-solid border-black "}`}
     >
       {pending ? (
         <span className="flex items-center gap-2">
-          <span className="animate-spin text-lg">⏳</span> Uploading...
+          <span className="animate-[spin_4s_linear_infinite] text-lg">
+            <Image alt="loading..." src={loading} width={15} />
+          </span>{" "}
+          Uploading...
         </span>
       ) : (
-        "Upload Project"
+        <span>Upload Project</span>
       )}
     </button>
   );
