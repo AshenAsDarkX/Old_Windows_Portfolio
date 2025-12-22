@@ -25,7 +25,7 @@ html {
   @apply border-2 border-dotted border-black px-3 leading-none;
 }
 
-.oldButtonHover:hover span {
+.submitButtonHover:hover span {
   @apply border-2 border-dotted border-black px-3 leading-none;
 }
 .oldButtonHover > div > p {

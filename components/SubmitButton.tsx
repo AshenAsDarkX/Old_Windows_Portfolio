@@ -11,7 +11,7 @@ export function SubmitButton() {
       type="submit"
       disabled={pending}
       className={` cursor-pointer items-center justify-center p-2
-        ${pending ? "cursor-not-allowed border-2 border-solid border-black" : "oldButtonHover border-2 border-solid border-black "}`}
+        ${pending ? "cursor-not-allowed border-2 border-solid border-black" : "submitButtonHover border-2 border-solid border-black "}`}
     >
       {pending ? (
         <span className="flex items-center justify-center gap-2 ">
