@@ -11,10 +11,10 @@ export function SubmitButton() {
       type="submit"
       disabled={pending}
       className={` cursor-pointer items-center justify-center p-2
-        ${pending ? "border-transparent" : "oldButtonHover border-2 border-solid border-black "}`}
+        ${pending ? "cursor-not-allowed border-2 border-solid border-black" : "oldButtonHover border-2 border-solid border-black "}`}
     >
       {pending ? (
-        <span className="flex items-center gap-2">
+        <span className="flex items-center justify-center gap-2 ">
           <span className="animate-[spin_4s_linear_infinite] text-lg">
             <Image alt="loading..." src={loading} width={15} />
           </span>{" "}
