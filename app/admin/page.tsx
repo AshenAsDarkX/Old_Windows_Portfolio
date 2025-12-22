@@ -77,7 +77,7 @@ export default function ProjectForm() {
       />
       {message && (
         <div
-          className={`p-2 text-center font-bold ${message.includes("✅") ? "text-green-600" : "text-red-600"}`}
+          className={`p-2 text-center font-bold ${message.includes("Success!") ? "text-green-600" : "text-red-600"}`}
         >
           {message}
         </div>
