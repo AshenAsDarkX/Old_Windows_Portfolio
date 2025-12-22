@@ -25,8 +25,11 @@ html {
   @apply border-2 border-dotted border-black px-3 leading-none;
 }
 
+.oldButtonHover:hover span {
+  @apply border-2 border-dotted border-black px-3 leading-none;
+}
 .oldButtonHover > div > p {
-  @apply border-windows-neutral border-2 px-3 leading-none hover:border-dotted;
+  @apply border-2 border-windows-neutral px-3 leading-none hover:border-dotted;
 }
 
 .closeButtonHover:hover > div > p {
@@ -34,7 +37,7 @@ html {
 }
 
 .closeButtonHover > div > p {
-  @apply border-windows-neutral border-2 leading-none text-gray-500 hover:border-dotted;
+  @apply border-2 border-windows-neutral leading-none text-gray-500 hover:border-dotted;
 }
 
 .keepscroll-animation {
