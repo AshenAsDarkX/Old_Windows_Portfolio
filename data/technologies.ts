@@ -31,6 +31,12 @@ const technologies: Technologies[] = [
     name: "Wordpress",
     image: "technologies/wp-logo.svg",
   },
+  {
+    id: 17,
+    type: "web",
+    name: "GSAP",
+    image: "technologies/gsap-logo.svg",
+  },
 
   {
     id: 17,
