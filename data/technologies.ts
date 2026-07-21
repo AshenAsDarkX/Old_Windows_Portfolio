@@ -24,7 +24,8 @@ const technologies: Technologies[] = [
     type: "web",
     name: "JavaScript",
     image: "technologies/js-logo.svg",
-  },{
+  },
+  {
     id: 17,
     type: "web",
     name: "Wordpress",
@@ -48,6 +49,18 @@ const technologies: Technologies[] = [
     type: "mobile",
     name: "Kotlin",
     image: "technologies/kotlin-logo.svg",
+  },
+  {
+    id: 20,
+    type: "mobile",
+    name: "Swift",
+    image: "technologies/swift-logo.svg",
+  },
+  {
+    id: 20,
+    type: "mobile",
+    name: "React Native",
+    image: "technologies/react-native-logo.svg",
   },
   {
     id: 13,
@@ -79,7 +92,6 @@ const technologies: Technologies[] = [
     name: "Premiere Pro",
     image: "technologies/pr-logo.svg",
   },
-  
 ];
 
 export default technologies;
