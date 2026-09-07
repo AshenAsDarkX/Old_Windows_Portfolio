@@ -21,6 +21,60 @@ html {
   /* border: 1px red solid; */
 }
 
+/* ── Windows 98 cursor set ── */
+
+/* Root cursor — everything inherits from here by default */
+html {
+  cursor: url("/windows-98/Cursor79.cur"), auto;
+}
+
+/* Let all elements inherit the cursor from their parent.
+   This prevents children inside buttons/links from overriding
+   the hand cursor and causing flickering. */
+*,
+*::before,
+*::after {
+  cursor: inherit;
+}
+
+/* Text inputs */
+input, textarea, [contenteditable] {
+  cursor: url("/windows-98/Cursor80.cur"), text;
+}
+
+/* Clickable elements — children will now inherit this hand cursor */
+a,
+button,
+[role="button"],
+select,
+label[for],
+summary,
+[tabindex]:not([tabindex="-1"]) {
+  cursor: url("/windows-98/Cursor107.cur"), pointer;
+}
+
+/* Disabled */
+[disabled],
+[aria-disabled="true"] {
+  cursor: url("/windows-98/Cursor99.cur"), not-allowed;
+}
+
+/* ── Override Tailwind cursor utilities to include Win98 URLs ──
+   Tailwind classes have specificity 0,1,0 which beats element selectors,
+   so we patch each one explicitly here. */
+.cursor-pointer     { cursor: url("/windows-98/Cursor107.cur"), pointer; }
+.cursor-default     { cursor: url("/windows-98/Cursor79.cur"),  default; }
+.cursor-text        { cursor: url("/windows-98/Cursor80.cur"),  text; }
+.cursor-wait        { cursor: url("/windows-98/Cursor83.cur"),  wait; }
+.cursor-move        { cursor: url("/windows-98/Cursor97.cur"),  move; }
+.cursor-not-allowed { cursor: url("/windows-98/Cursor99.cur"),  not-allowed; }
+.cursor-progress    { cursor: url("/windows-98/Cursor101.cur"), progress; }
+.cursor-help        { cursor: url("/windows-98/Cursor103.cur"), help; }
+.cursor-nwse-resize { cursor: url("/windows-98/Cursor89.cur"),  nwse-resize; }
+.cursor-nesw-resize { cursor: url("/windows-98/Cursor91.cur"),  nesw-resize; }
+.cursor-ew-resize   { cursor: url("/windows-98/Cursor93.cur"),  ew-resize; }
+.cursor-ns-resize   { cursor: url("/windows-98/Cursor95.cur"),  ns-resize; }
+
 .oldButtonHover:hover > div > p {
   @apply border-2 border-dotted border-black px-3 leading-none;
 }
