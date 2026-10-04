@@ -4,6 +4,7 @@ import Image from "next/image";
 import Hero from "@/app/sections/Hero";
 import Technologies from "./sections/Technologies";
 import Projects from "./sections/Projects";
+import Experience from "./sections/Experience";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <div className="mx-auto max-w-6xl px-4 lg:p-0">
         <Hero />
         <Technologies />
+        <Experience />
         <Projects />
       </div>
     </main>
