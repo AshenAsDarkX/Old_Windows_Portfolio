@@ -64,13 +64,13 @@ export default function ExperienceWindow({
             <span className="text-[11px] text-[#333]">{dates}</span>
           </div>
           <div className="mb-2 text-[11px] text-[#333]">{companyLine}</div>
-          <ul className="mb-2.5 list-disc space-y-1 pl-4">
+          {/* <ul className="mb-2.5 list-disc space-y-1 pl-4">
             {bullets.map((b, i) => (
               <li key={i} className="text-[11px] leading-snug">
                 {b}
               </li>
             ))}
-          </ul>
+          </ul> */}
           <div className="mb-2.5 flex flex-wrap gap-1.5">
             {tags.map((tag) => (
               <span
